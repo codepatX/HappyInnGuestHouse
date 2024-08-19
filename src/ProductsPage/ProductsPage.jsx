@@ -1,14 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import './ProductsPage.css';
+import { PulsatingRings, RotatingDots, Spinner, ZigZagLine } from 'loaders-ui';
 
 function ProductsPage({ addToCart }) {
     const [posts, setPosts] = useState([]);
+    const [IsLoading, setLoading] = useState(false);
     const [selectedPost, setSelectedPost] = useState(null);
 
     useEffect(() => {
+        setLoading(true);
         fetch('https://fakestoreapi.com/products')
             .then(response => response.json())
-            .then(result => setPosts(result));
+            .then(result => {
+
+                setLoading(false)
+                
+                setPosts(result)
+
+
+            });
     }, []);
 
     const handleBuyClick = (post) => {
@@ -26,7 +36,14 @@ function ProductsPage({ addToCart }) {
         }
     };
 
-    return (
+    return IsLoading? 
+    <div>
+        <RotatingDots
+
+        />
+    </div>: (
+        
+        <>
         <div className="store-container">
             {posts.map(post => (
                 <div key={post.id} className="store-item">
@@ -56,6 +73,7 @@ function ProductsPage({ addToCart }) {
                 </div>
             )}
         </div>
+        </>
     );
 }
 

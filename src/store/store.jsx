@@ -1,5 +1,7 @@
 import './store.css';
 import React, { useState, useEffect } from 'react';
+import "loaders-ui/dist/main/index.min.css";
+import { Spinner } from 'loaders-ui';
 
 function Store() {
     const [posts, setPosts] = useState([]);
