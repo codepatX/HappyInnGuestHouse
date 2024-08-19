@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "hotelbooking",
+=======
+  "name": "-latest",
+>>>>>>> e07208d8798b0e5bd3654ce63c32dcfaf29fb75a
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,10 +15,17 @@
   },
   "dependencies": {
     "axios": "^1.7.4",
+<<<<<<< HEAD
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.1",
     "styled-components": "^6.1.12"
+=======
+    "loaders-ui": "^1.1.61",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1"
+>>>>>>> e07208d8798b0e5bd3654ce63c32dcfaf29fb75a
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
@@ -24,7 +35,10 @@
     "eslint-plugin-react": "^7.34.3",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+<<<<<<< HEAD
     "gh-pages": "^6.1.1",
+=======
+>>>>>>> e07208d8798b0e5bd3654ce63c32dcfaf29fb75a
     "vite": "^5.3.4"
   }
 }
