@@ -1,0 +1,61 @@
+/* Facilities Section */
+.facilities-section {
+    padding: 5rem 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .facilities-section h2 {
+    font-size: 2.5rem;
+    color: #2D3192;
+    margin-bottom: 3rem;
+  }
+  
+  .facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .facility-card {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .facility-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .facility-icon {
+    font-size: 3rem;
+    color: #FFD700;
+    margin-bottom: 1rem;
+  }
+  
+  /* Specific Facility Icons */
+  .facility-icon.pool {
+    content: url('/path/to/pool-icon.svg'); /* Replace with actual path to pool icon */
+  }
+  
+  .facility-icon.bar {
+    content: url('/path/to/bar-icon.svg'); /* Replace with actual path to bar icon */
+  }
+  
+  .facility-icon.rooms {
+    content: url('/path/to/rooms-icon.svg'); /* Replace with actual path to rooms icon */
+  }
+  
+  .facility-card h3 {
+    font-size: 1.5rem;
+    color: #2D3192;
+    margin-bottom: 1rem;
+  }
+  
+  .facility-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
